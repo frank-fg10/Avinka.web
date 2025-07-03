@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de las gallinas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo">
+                    <img src="images/logoooteo.png" alt="Avinka" style="height:180px;">
+                </a></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">NOTICIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#seccion2" class="nav-link active">TIENDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#seccion3" class="nav-link active">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <h2 class="h2-sub">
+                <span class="fil">A</span>vinka
+            </h2>
+            <h1 class="head">Nuestra cultura</h1>
+            <div class="he-des">
+                <h5>Más que una empresa, somos parte de la cadena alimenticia que nutre familias y promueve la economía
+                    local. Por eso, apoyamos a productores regionales y fomentamos prácticas justas en toda nuestra
+                    cadena de valor.</h5>
+                <a href="index.html" class="btn cta-btn">EXPLORA</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h2>Detalle de la gallina orpington</h2>
+        <div><!-- Aquí pueden ir los detalles de la gallina -->
+            <p>
+                La gallina Orpington es una raza de gallina originaria de Inglaterra, conocida por su plumaje suave y
+                denso, así como por su temperamento dócil. Son aves de tamaño mediano a grande, con un cuerpo robusto
+                y una postura erguida. Su plumaje puede variar en colores, siendo los más comunes
+            </p>
+            <img src="/images/orpington.JPG" alt="" width="400" height="300">
+            <ul>
+                <p>caracteristicas</p>
+                <li>Origen: Inglaterra</li>
+                <li>Color de huevo: Marrón claro</li>
+                <li>Producción de huevos: Moderada a alta</li>
+                <li>Temperamento: Dócil y amigable</li>
+                <li>Usos: Doble propósito (huevos y carne)</li>
+            </ul>
+        </div>
+    </main>
+
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-content-about">
+                    <a href="#"class="btn cta-btn" id="seccion3" >NOSOTROS</a>
+                    <div class="circle">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <p>
+                        Avinka es tu aliado confiable en la venta de productos agrícolas y pollos vivos de la más alta calidad. Nos dedicamos a brindar alimentos frescos, saludables y accesibles, directamente del campo a tu mesa o negocio.
+                    </p>
+                </div>
+                <div class="footer-div">
+                    <div class="social-media">
+                        <h4>siguenos</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="https://x.com/?lang=es"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/Avinka.pe"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li></li>
+                                <a href="https://www.instagram.com/avinka_pe/"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/showcase/avinka-productos/"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <h4>NOTICIAS</h4>
+                        <form action="" class="news-form">
+                            <input type="text" class="news-input" placeholder="Ingresa tu correo">
+                            <button class="news-btn" type="submit">
+                                <i class="fas fa-envelope"> </i>
+                                <script>
+                                document.querySelector('.news-form').addEventListener('submit', function(e) {
+                                    e.preventDefault();
+                                    alert('Tu correo ha sido enviado correctamente.');
+                                    document.querySelector('.news-input').value = '';
+                                });
+                                </script>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        const selectElement = (element) => document.querySelector(element);
+
+        // Fix selector: should be '.menu-toggle' not 'menu-toggle'
+        let menuToggle = selectElement('.menu-toggle');
+        let navList = selectElement('.nav-list');
+
+        menuToggle.addEventListener('click', function () {
+            navList.classList.toggle('open');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
